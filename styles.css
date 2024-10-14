@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Space for footer */
+}
+
+.header {
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+/* Countdown Clock */
+#countdown {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Page-specific Styles */
+.page1 {
+    background-color: #ffe6e6; /* Light Red */
+    color: #cc0000;
+}
+
+.page2 {
+    background-color: #e6ffe6; /* Light Green */
+    color: #009900;
+}
+
+.page3 {
+    background-color: #e6e6ff; /* Light Blue */
+    color: #0000cc;
+}
+
+.page4 {
+    background-color: #ffffe6; /* Light Yellow */
+    color: #cccc00;
+}
+
+.page5 {
+    background-color: #ffe6ff; /* Light Pink */
+    color: #cc00cc;
+}
+
+/* Balloon Images */
+.balloon {
+    width: 100px;
+    margin: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translatey(0px); }
+    50% { transform: translatey(-20px); }
+    100% { transform: translatey(0px); }
+}
